@@ -36,16 +36,17 @@ contract TokenExchange {
         unchecked {
             amounts = amount * length;
         }
-        console.log(amounts);
+        console.log("The amount that should be sent to each receiver is 128. However, due to the overflow caused by 2*128, it loops back to %s", amounts);
         require(balances[msg.sender] >= amounts, "Insufficient balance");
         // It will by subtracted by overflowed amount, in our example, amounts should be 0
         balances[msg.sender] -= amounts;
         for(uint i = 0; i < length; i++) {
             balances[_addrs[i]] += amount;
             emit TokenTransfer(msg.sender,_addrs[i],amount);
-            console.log("Receiver balance: %s",  balances[_addrs[i]]);
+            console.log("Receiver[%d] balance: %s", i+1, balances[_addrs[i]]);
         }
-        console.log("Sender balance: %s", balances[msg.sender]);
+        console.log("Attacker balance : %s", balances[msg.sender]);
+        console.log("After the third attacker transfers 128 to each of the two receivers, the account balances did not decrease and remained at 5.");
     }
 
     function getBalance(address account) external view returns (uint256) {
