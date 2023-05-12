@@ -1,5 +1,5 @@
 # Overflow-Attack-Example
-This is a example for overflow attack in smart contract, created as part of course project for UW-Madison CS639-008
+This is a example for overflow attack in smart contract, created as part of course project for UW-Madison CS639-008.
 To run this exmaple, you should uploade the contract folder to Remix IDE
 
 To simulate the attack, you should:
