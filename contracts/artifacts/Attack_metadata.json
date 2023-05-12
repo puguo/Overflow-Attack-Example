@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract TokenExchange",
+						"name": "_exchange",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_addrs",
+						"type": "address[]"
+					}
+				],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Attack.sol": "Attack"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Attack.sol": {
+			"keccak256": "0xfad575c0a713e23dad16792658fee28664c9231fecfca95926bdcf0bd237e780",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://17bb7202f8097d08587dc5d3a5915805de4e5da764e7fbc17f76db283256b539",
+				"dweb:/ipfs/QmZksAyXF6775TesGKGeYv9AdwbQedsgTfjzuMJouiJi6E"
+			]
+		},
+		"contracts/Exchange.sol": {
+			"keccak256": "0x4f8cbce5a221f293272e78a7c976c0460aad9a0c2b7671a0eb66c01369cd0638",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://03343bf4bab6775b975f48494d25c18a135ca52eff8fa0c7361f0d7ed97adfa1",
+				"dweb:/ipfs/QmSsvzfT4V7rDStRF8jWnVTrYXhSrarPVt5dFxcefNNCYi"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x60b0215121bf25612a6739fb2f1ec35f31ee82e4a8216c032c8243d904ab3aa9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e29880d33dd479bb046ba306993d26ccb779a4b1d94a046cb3567f22948bb4d",
+				"dweb:/ipfs/QmfTY1qzPt5C63Wc7y6JqfZr5899NRvXYdCpyLzR5FXQic"
+			]
+		}
+	},
+	"version": 1
+}
