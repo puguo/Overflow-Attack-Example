@@ -1,6 +1,6 @@
 # Overflow-Attack-Example
 This is a example for overflow attack in smart contract, created as part of course project for UW-Madison CS639-008.
-To run this exmaple, you should uploade the contract folder to Remix IDE
+To run this exmaple, you should uploade exchange.sol and attack.sol to Remix IDE, under contracts folder
 
 To simulate the attack, you should:
 1. Deploy Exchange.sol, you don't need to change any setting in any step excepts for address
